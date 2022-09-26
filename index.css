@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: #92d1b4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  /* font-weight: bold; */
+  font-size: 20px;
+}
+nav {
+  width: 100%;
+  /* display: flex; */
+  /* background-color: red; */
+  padding: 5px 10px;
+}
+/* nav li span {
+  display: block;
+} */
+p {
+  margin-bottom: 4px;
+}
+footer {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 5%;
+}
+.container-image {
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  position: relative;
+}
+.container-image img {
+  width: 80%;
+}
+.image-name {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(68, 114, 78, 0.65);
+  padding-top: 10px;
+}
+.badge {
+  background-color: white;
+  font-size: 8px;
+  color: black;
+  border-radius: 3px;
+  padding: 3px 4px;
+  margin-bottom: 7px;
+}
+.container-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  border-left: 2px solid white;
+  padding-left: 7px;
+  margin-top: 15px;
+  align-items: center;
+}
+.icon-container {
+  width: 40%;
+  display: flex;
+  gap: 10%;
+  margin-bottom: 10px;
+}
+.icon-span {
+  background-color: white;
+  width: 30px;
+  border-radius: 100%;
+  display: flex;
+  padding: 4px;
+}
+.icon {
+  width: 100%;
+}
+/* .region {
+  position: absolute;
+  top: -50%;
+  left: 0;
+} */
+@media screen and (min-width: 768px) {
+  footer {
+    height: 60px;
+    position: relative;
+  }
+  .container-image img {
+    width: 34%;
+  }
+  .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-image {
+    width: 65%;
+
+    padding-right: 10%;
+  }
+  .image-name {
+    left: 50px;
+    font-size: 40px;
+  }
+  .container-info {
+    width: 10%;
+  }
+  .container-stats {
+    width: 25%;
+  }
+  .region {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image-name {
+    left: 70px;
+    font-size: 65px;
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}
+.text-small {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
